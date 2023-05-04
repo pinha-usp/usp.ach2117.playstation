@@ -1,12 +1,12 @@
 import moderngl_window as mglw
 import pathlib
-import numpy as np
+from figures.triangle import Triangle
 
 class Figures(mglw.WindowConfig):
     gl_version = (3, 3)
     title = "2D Figures"
-    fullscreen = True
     resource_dir = pathlib.Path("resources")
+    fullscreen = True
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -16,11 +16,11 @@ class Figures(mglw.WindowConfig):
             fragment_shader="shaders/fragment.glsl",
         )
 
-        triangle = np.array([
-            0.0, 0.5, 0.0,
-            -0.5, -0.5, 0.0,
-            0.5, -0.5, 0.0
-        ], dtype=np.float32)
+        triangle = Triangle(
+            (0.0, 1.0, 0.0),
+            (-1.0, -1.0, 0.0),
+            (1.0, -1.0, 0.0)
+        )
 
         triangle_buffer = self.ctx.buffer(triangle.tobytes())
 
