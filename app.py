@@ -1,6 +1,6 @@
 import pathlib
 import moderngl_window as mglw
-from figures.triangle import Triangle 
+from figures.triangle import Triangle
 
 class App(mglw.WindowConfig):
 
