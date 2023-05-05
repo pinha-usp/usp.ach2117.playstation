@@ -1,6 +1,4 @@
 import pathlib
-from typing import List
-import numpy as np
 import moderngl_window as mglw
 from moderngl_window.opengl.vao import VAO
 from figures import window_figures
