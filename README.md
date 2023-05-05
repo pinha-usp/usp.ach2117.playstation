@@ -10,3 +10,22 @@ círculos, retângulos e triângulos a partir de vértices 2D, assim como rotaç
   <img width="400" src="https://user-images.githubusercontent.com/86596621/236529852-8e6976f9-0bbc-493e-80a6-7fdbfff97c01.png">
 </div>
 
+## Como executar?
+
+Instale as dependências do projeto:
+
+```
+python install -r requirements.txt
+```
+
+Após, é só rodar o script principal:
+
+```
+python window.py
+```
+
+> **Warning**
+> A versão Python 3.10 foi utilizada
+
+> **Note**
+> A tela ficará em fullscreen. Para sair do programa, basta apertar <kbd>ESC</kbd>
